@@ -25,7 +25,7 @@ The code block then reads the response body and prints it to the serial monitor.
 
 For example, if the response is "backward", it sets pin 27 to HIGH and the rest to LOW, which makes the robot move backward. If the response is "forward", it sets pin 25 to HIGH and the rest to LOW, which makes the robot move forward, if the response is "right", it sets pin 26 to HIGH and pin 18 to LOW, which makes the robot turn right, Then the code block repeats this process for each URL in each loop iteration.
 
-# simulation test:
+# simulation Test:
 
 https://github.com/salman-akak/SM23-IOT-01/assets/139633858/1e62acab-5bd3-4268-a550-0b2a45ce7909
 
