@@ -15,11 +15,7 @@ Using an Arduino IDE Programmer, we have connected the ESP32 to a power source a
 
 We start the code with some include statements that import the libraries needed for WiFi, HTTP and serial communication. Then it defines a macro USE_SERIAL that refers to the Serial object. Next, it creates a WiFiMulti object that can handle multiple WiFi networks. 
 
-Then we should define the setup function that runs the Arduino board once is connected with the ESP32. we set four pins (27, 25, 26 and 18) as output pins, initializes the serial connection with a rate of 115200, prints some messages to the serial monitor from the web link given by smart methods, and adds a WiFi network with its SSID and password to the WiFiMulti object. Finally, it defines the loop function that runs repeatedly after the setup function.
-
-In this function, it checks if the WiFi connection is established, and if so, it creates an HTTPClient object that can send and receive HTTP requests. 
-
-We will use this object to send GET requests from five different URLs: (https://s-m.com.sa/b.html, https://s-m.com.sa/f.html and https://s-m.com.sa/r.html, https://s-m.com.sa/l.html, https://s-m.com.sasb.html) These URLs are supposed to return either "backward", "forward", "right", "left" or "stop" as the response body, indicating the direction that the robot should move. 
+Then we should define the setup function that runs the Arduino board once is connected with the ESP32. we set four pins (27, 25, 26 and 18) as output pins, initializes the serial connection with a rate of 115200, prints some messages to the serial monitor from the web link given by smart methods, and adds a WiFi network with its SSID and password to the WiFiMulti object. Finally, it defines the loop function that runs repeatedly after the setup function. In this function, it checks if the WiFi connection is established, and if so, it creates an HTTPClient object that can send and receive HTTP requests. 
 
 The code block then reads the response body and prints it to the serial monitor. Depending on the response, it sets the output pins to HIGH or LOW to control the robot's movement.
 
@@ -30,6 +26,9 @@ For example, if the response is "backward", it sets pin 27 to HIGH and the rest 
 https://github.com/salman-akak/SM23-IOT-01/assets/139633858/1e62acab-5bd3-4268-a550-0b2a45ce7909
 
 # Code for Connecting the robot control panel with ESP32 throw wifi:
+
+We will use this object to send GET requests from five different URLs: (https://s-m.com.sa/b.html, https://s-m.com.sa/f.html and https://s-m.com.sa/r.html, https://s-m.com.sa/l.html, https://s-m.com.sasb.html) These URLs are supposed to return either "backward", "forward", "right", "left" or "stop" as the response body, indicating the direction that the robot should move. 
+
 ```
 #include <Arduino.h>
 #include <WiFi.h>
