@@ -1,6 +1,6 @@
 # SM23-IOT-01
 
-IOT yask 2 (Connection of robot control panel with ESP32)
+IOT task 2 (Connection of robot control panel with ESP32)
 
 # Introduction
 Using an Arduino IDE Programmer, we have connected the ESP32 to a power source and a control panel, also wrote the code to connect it to the Wi-Fi network, Then connect the four output pins of the microcontroller to four LEDs, each with it's own resistor in the series, in addition we programmed the ESP32 to turn on a specific LED when the robot moves in a specific direction, and turn off the others LED's simultaneously, after wards the robot should stops instead of the LED's we are using to turn off, finally we assign each LED to a specific direction of the robot movement (forward, backward, right, left, then stop all of it and repeat) and turn on the corresponding LED when the robot moves in the chosen direction, by turning off the LED when the robot stops. 
