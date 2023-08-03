@@ -19,7 +19,7 @@ In this function, it checks if the WiFi connection is established, and if so, it
 
 For example, if the response is "backward", it sets pin 27 to HIGH and the rest to LOW, which makes the robot move backward. If the response is "forward", it sets pin 25 to HIGH and the rest to LOW, which makes the robot move forward. If the response is "right", it sets pin 26 to HIGH and pin 18 to LOW, which makes the robot turn right. The code block repeats this process for each URL in each loop iteration.
 
-# Code for Connection the robot control panel with ESP32 throw wifi:
+# Code for Connecting the robot control panel with ESP32 throw wifi:
 ```
 #include <Arduino.h>
 #include <WiFi.h>
