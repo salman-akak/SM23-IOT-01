@@ -15,7 +15,7 @@ Using an Arduino IDE Programmer, we have connected the ESP32 to a power source a
 
 We start the code with some include statements that import the libraries needed for WiFi, HTTP and serial communication. Then it defines a macro USE_SERIAL that refers to the Serial object. Next, it creates a WiFiMulti object that can handle multiple WiFi networks. 
 
-Then we should define the setup function that runs once when the Arduino board is connected with the ESP32. In this function, it sets four pins (27, 25, 26 and 18) as output pins, initializes the serial connection with a rate of 115200, prints some messages to the serial monitor from the web link given by smart methods, and adds a WiFi network with its SSID and password to the WiFiMulti object. Finally, it defines the loop function that runs repeatedly after the setup function.
+Then we should define the setup function that runs the Arduino board once is connected with the ESP32. we set four pins (27, 25, 26 and 18) as output pins, initializes the serial connection with a rate of 115200, prints some messages to the serial monitor from the web link given by smart methods, and adds a WiFi network with its SSID and password to the WiFiMulti object. Finally, it defines the loop function that runs repeatedly after the setup function.
 
 In this function, it checks if the WiFi connection is established, and if so, it creates an HTTPClient object that can send and receive HTTP requests. 
 
